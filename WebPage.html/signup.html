@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Create Account</title>
+    <!-- Reference external CSS stylesheet -->
+    <link rel="stylesheet" href="/Users/kevinyoong/Desktop/Web Fundamentals/Assignment/ExternalSheets/CSS/loginstyle.css">
+    <link rel="stylesheet" href="/Users/kevinyoong/Desktop/Web Fundamentals/Assignment/ExternalSheets/CSS/headerstyle.css">
+    <link rel="stylesheet" href="/Users/kevinyoong/Desktop/Web Fundamentals/Assignment/ExternalSheets/CSS/flexstyle.css">
+    <link rel="stylesheet" href="/Users/kevinyoong/Desktop/Web Fundamentals/Assignment/ExternalSheets/CSS/footerstyle.css">
+    <!-- Reference Javascript -->
+    <script src="/Users/kevinyoong/Desktop/Web Fundamentals/Assignment/ExternalSheets/Javascript/signupscript.js"></script>
+</head>
+
+<header>
+    <!-- Inserting logo onto header -->
+    <img src="/Users/kevinyoong/Desktop/Web Fundamentals/Assignment/Images/LogoDark.png" alt="LogoDark" onclick="location.href='home.html'">
+
+    <!-- Creating navigation menu -->
+    <ul>
+        <li class="header-cursor" onclick="location.href='home.html'">About Us</li>
+        <li class="header-object">Services
+            <a href="#"></a>
+            <ul class="dropdown-list">
+                <li onclick="location.href='contact.html'">Contact Us</li>
+                <li class="defaultcursor">Find Us</li>
+            </ul>
+        </li>
+        <li class="header-object">Account
+            <a href="#"></a>
+            <ul class="dropdown-list">
+                <li onclick="location.href='login.html'">Login</li>
+                <li onclick="location.href='signup.html'">Sign Up</li>
+            </ul>
+        </li>
+    </ul>
+</header>
+
+<!-- Calls the flex_container class to create a flex container -->
+    <div class="flex_container">
+        <!-- Calls the flex_item_left class to float items to the left -->
+        <div class="flex_item_left">
+            <div>
+                <h1>Create An Account</h1>
+                <!-- Insert image of the logo -->
+                <img src="/Users/kevinyoong/Desktop/Web Fundamentals/Assignment/Images/LogoLight.png" alt="LogoLight">
+            </div>
+        </div>
+
+        <!-- Calls the flex_item_right class to float items to the right -->
+        <div class="flex_item_right">
+            <div>
+                <!-- Create a signup form -->
+                <form method="post">
+                    <label for="fullname">Name</label><br>
+                    <input type="text" name="fullname" id="fullname" required>
+                    <label for="username">Username</label><br>
+                    <input type="text" name="username" id="username">
+                    <label for="useremail">Email</label><br>
+                    <input type="email" name="useremail" id="useremail">
+                    <label for="password">Password</label><br>
+                    <input type="password" name="password" id="password">
+                    <label for="confirmpass">Confirm Password</label>
+                    <input type="password" name="confirmpass" id="confirmpass">
+                    <!-- Calls the checkSignup() function upon clicking submit to validate the form -->
+                    <button type="submit" class="black-button" onclick="return checkSignup()">Create Account</button>
+                </form>
+
+                <!-- Create a link that brings the user to the login page -->
+                <p>
+                    Already have an account?<a href="login.html">Log in here</a>
+                </p>
+            </div>
+        </div>
+    </div>
+</body>
+<!-- Create a margin above the footer -->
+<hr class="loginhrmargin">
+<!-- Calls the footer class to create a flex container -->
+<footer class="footer">
+    <!-- Calls the footerobject class -->
+    <div class="footerobject">
+        <!-- Create links to different pages -->
+        <h3>Quick Links</h3>
+        <ul>
+            <li class="cursor" onclick="location.href='home.html'"><strong>About Us</strong></li>
+            <li><strong>Services</strong>
+                <a href="#"></a>
+                <ul class="cursor">
+                    <li onclick="location.href='contact.html'">Contact Us</li>
+                    <li>Find Us</li>
+                </ul>
+            </li>
+            <li><strong>Account</strong>
+                <a href="#"></a>
+                <ul class="cursor">
+                    <li onclick="location.href='login.html'">Login</li>
+                    <li onclick="location.href='signup.html'">Sign Up</li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+    <div class="footerobject">
+        <!-- Create dummy details -->
+        <h3>Contact Details</h3>
+        <ul>
+            <li>Email: prosperwell@gmail.com</li>
+            <li>Phone: 05-5476849</li>
+        </ul>
+    </div>
+    <div class="footerobject">
+        <!-- Create dates for website -->
+        <h3>Web Dates</h3>
+        <ul>
+            <li>Date created: 4/12/2023</li>
+            <li>Date updated: 11/12/2023</li>
+        </ul>
+    </div>
+</footer>
+</html>

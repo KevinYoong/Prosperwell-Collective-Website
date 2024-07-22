@@ -1,0 +1,232 @@
+/* CSS style for homepage */
+p{
+    font-size: 1.5em;
+}
+
+h1{
+    text-align: center;
+}
+
+hr{
+    margin-top: 5%;
+    color: silver;
+}
+
+footer{
+    margin-left: 10%;
+    margin-right: 10%;
+    padding-top: 3em;
+    padding-bottom: 5em;
+}
+
+h2{
+    text-align: center;
+}
+
+body{
+    background-color: rgb(244, 233, 219);
+}
+
+/* Set the introduction to a different background colour */
+.introduction{
+    background-color: silver;
+    padding-top: 10em;
+    padding-bottom: 5em;
+}
+
+/* Adjust spacing in the introduction p */ 
+.introduction p{
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+/* Make the first letter in the introduction larger */
+.introduction p:first-of-type::first-letter{
+    font-size: 3.5em;
+    float: left;
+    margin-right: 10px;
+}
+
+/* Set a flex container for the background section */
+.background-casestudy{
+    padding-top: 3em;
+    padding-bottom: 5em;
+    margin-left: 10%;
+    margin-right: 10%;
+    display: flex;
+}
+
+/* Float the bakground to the left */
+.background{
+    flex: 50%;
+    float: left;
+}
+
+/* Float the case study to the leftt */
+.case-study{
+    flex: 50%;
+    float: right;
+}
+
+/* Create a box for the case study */
+.box{
+    border: 1px solid lightblue;
+    background-color: lightblue;
+    color: black;
+    box-shadow: 10px 10px 5px silver;
+    padding-right: 5em;
+    padding-left: 5em;
+    margin-left: 10em;
+    width: 400px;
+    font-size: small;
+}
+
+.box hr{
+    height: 2px;
+    background-color: black;
+    margin-bottom: 2em;
+}
+
+.case-study hr{
+    margin-bottom: 2em;
+}
+
+/* Create a flex container to place boxes for reviews */
+.review{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 15%;
+    margin-left: 15%;
+}
+
+/* Create boxes for reviews */
+.reviewbox{
+    flex: 1 0 auto; /* Equal flex distribution */
+    text-align: center;
+    padding: 10px;
+    margin-right: 5em;
+    margin-left: 5em;
+    margin-bottom: 10em;
+    height: 400px;
+}
+
+/* Adjust the line divider in the review box */
+.reviewbox hr{
+    height: 2px;
+    background-color: black;
+    margin-bottom: 2em;
+}
+
+
+/* Set different background colours for different review boxes */
+.reviewred{
+    background-color: #DA8978;
+    border: 1px solid #DA8978;
+    color: black;
+    text-align: center;
+    padding-right: 5em;
+    padding-left: 5em;
+    font-size: small;
+    width: 250px;
+    height: 500px;
+    overflow-y: auto; /* Set a scrollbar in the review box */
+}
+
+.revieworange{
+    background-color: #DBA166;
+    border: 1px solid #DBA166;
+    color: black;
+    text-align: center;
+    padding-right: 5em;
+    padding-left: 5em;
+    font-size: small;
+    width: 250px;
+    height: 500px;
+    overflow-y: auto;
+}
+
+.reviewyellow{
+    background-color: rgb(239, 239, 127);
+    border: 1px solid rgb(239, 239, 127);
+    color: black;
+    text-align: center;
+    padding-right: 5em;
+    padding-left: 5em;
+    font-size: small;
+    width: 250px;
+    height: 500px;
+    overflow-y: auto;
+}
+
+.reviewgreen{
+    border: 1px solid #97da81;
+    background-color: #97DA81;
+    color: black;
+    text-align: center;
+    padding-right: 5em;
+    padding-left: 5em;
+    font-size: small;
+    width: 250px;
+    height: 500px;
+    overflow-y: auto;
+}
+
+.reviewblue{
+    background-color: #68B1DB;
+    border: 1px solid #68B1DB;
+    color: black;
+    text-align: center;
+    padding-right: 5em;
+    padding-left: 5em;
+    font-size: small;
+    width: 250px;
+    height: 500px;
+    overflow-y: auto;
+}
+
+.reviewpurple{
+    background-color: #da91d7;
+    border: 1px solid #da91d7;
+    color: black;
+    text-align: center;
+    padding-right: 5em;
+    padding-left: 5em;
+    font-size: small;
+    width: 250px;
+    height: 500px;
+    overflow-y: auto;
+}
+
+.reviewindigo{
+    background-color: #A584DB;
+    border: 1px solid #A584DB;
+    color: black;
+    text-align: center;
+    padding-right: 5em;
+    padding-left: 5em;
+    font-size: small;
+    width: 250px;
+    height: 500px;
+    overflow-y: auto;
+}
+
+/* Adjust page layout when max width is 1000px */
+@media (max-width:1000px){
+    .background-casestudy{
+        padding-top: 3em;
+        padding-bottom: 5em;
+        margin-left: 10%;
+        margin-right: 10%;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .background .case-study{
+        flex: 100%;
+        justify-content: center;
+    }
+    .review{
+        flex-direction: column;
+    }
+}

@@ -1,0 +1,49 @@
+/* CSS style for footer */
+/* Create a class for footer */
+.footer{
+    margin-left: 35%;
+    margin-bottom: 20em;
+}
+
+/* Create a flex container for footer objects */
+.footerobject{
+    float: left;
+    margin-right: 12em;
+}
+
+/* Shows pointer cursor */
+.cursor:hover{
+    cursor: pointer;
+}
+
+/* Align the list to the left */
+footer ul{
+    list-style-type: none;
+    text-align: left;
+    padding: 0;
+}
+
+footer ul li{
+    margin-bottom: 10px;
+    margin-top: 10px;
+    font-size: 15px;
+}
+
+footer ul li ul{
+    margin-top: 10px;
+    text-align: left;
+    float: right;
+}
+
+/* Adjusts the margin on top of the thematic break line */
+.hrmargin{
+    margin-top: 5em;
+    color: silver;
+}
+
+
+/* Adjust the margin on top of the thematic break line in the login and signup page*/
+.loginhrmargin{
+    margin-top: 63em;
+    color: silver;
+}

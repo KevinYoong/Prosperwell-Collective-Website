@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Contact Us</title>
+    <!-- Reference external CSS stylesheet -->
+    <link rel="stylesheet" href="/Users/kevinyoong/Desktop/Web Fundamentals/Assignment/ExternalSheets/CSS/headerstyle.css">
+    <link rel="stylesheet" href="/Users/kevinyoong/Desktop/Web Fundamentals/Assignment/ExternalSheets/CSS/footerstyle.css">
+    <!-- Reference JavaScript -->
+    <script src="/Users/kevinyoong/Desktop/Web Fundamentals/Assignment/ExternalSheets/Javascript/formscript.js"></script>
+    <style>
+        /* Set the background colour of the body */
+        body{
+            background-color: rgb(244, 233, 219);
+            padding-top: 100px;
+        }
+    </style>
+</head>
+
+<header>
+    <!-- Insert logo image -->
+    <img src="/Users/kevinyoong/Desktop/Web Fundamentals/Assignment/Images/LogoDark.png" alt="LogoDark" onclick="location.href='home.html'">
+
+    <!-- Create navigation menu -->
+    <ul>
+        <li class="header-cursor" onclick="location.href='home.html'">About Us</li>
+        <li class="header-object">Services
+            <a href="#"></a>
+            <!-- Create a list inside the initial list -->
+            <!-- Calls the dropdown-list class to create a dropdown menu -->
+            <ul class="dropdown-list">
+                <li onclick="location.href='contact.html'">Contact Us</li>
+                <li class="defaultcursor">Find Us</li>
+            </ul>
+        </li>
+        <li class="header-object">Account
+            <a href="#"></a>
+            <ul class="dropdown-list">
+                <li onclick="location.href='login.html'">Login</li>
+                <li onclick="location.href='signup.html'">Sign Up</li>
+            </ul>
+        </li>
+    </ul>
+</header>
+
+<body>
+    <h1>Contact Us</h1>
+    <p>
+        Reach out to us if you need help.
+    </p>
+
+    <!-- Create a form for user to fill in -->
+    <form method="post">
+        First Name <br><input type="text" name="firstname" id="firstname"> <br><br>
+        Last Name <br><input type="text" name="lastname" id="lastname"> <br><br>
+        Email <br><input type="email" name="email" id="email"> <br><br>
+        Message <br><textarea id="message" cols="100" rows="15"></textarea><br><br>
+
+        <!-- Call the function to validate the form after clicking the submit button -->
+        <!-- Moves the user back to the contact page after submitting -->
+        <input type="submit" value="Submit Form" onclick="return myFunction(); location.href='contact.html'">
+    </form>
+</body>
+<!-- Create a margin above the footer -->
+<hr class="hrmargin">
+<!-- Calls the footer class to create a flex container -->
+<footer class="footer">
+    <!-- Calls the footerobject class -->
+    <div class="footerobject">
+        <!-- Create links to different pages -->
+        <h3>Quick Links</h3>
+        <ul>
+            <li class="cursor" onclick="location.href='home.html'"><strong>About Us</strong></li>
+            <li><strong>Services</strong>
+                <a href="#"></a>
+                <ul class="cursor">
+                    <li onclick="location.href='contact.html'">Contact Us</li>
+                    <li>Find Us</li>
+                </ul>
+            </li>
+            <li><strong>Account</strong>
+                <a href="#"></a>
+                <ul class="cursor">
+                    <li onclick="location.href='login.html'">Login</li>
+                    <li onclick="location.href='signup.html'">Sign Up</li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+    <div class="footerobject">
+        <!-- Create dummy details -->
+        <h3>Contact Details</h3>
+        <ul>
+            <li>Email: prosperwell@gmail.com</li>
+            <li>Phone: 05-5476849</li>
+        </ul>
+    </div>
+    <div class="footerobject">
+        <!-- Create dates for website -->
+        <h3>Web Dates</h3>
+        <ul>
+            <li>Date created: 4/12/2023</li>
+            <li>Date updated: 11/12/2023</li>
+        </ul>
+    </div>
+</footer>
+</html>

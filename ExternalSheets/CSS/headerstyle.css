@@ -1,0 +1,67 @@
+/* CSS style for header */
+/* Set the header to be on top of the page and black in colour*/
+header{
+    background-color: black;
+    height: 110px;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+}
+
+/* Float the logo to the left of the header */
+header img {
+    float: left;
+    height: 100px;
+    width: 150px;
+    text-align: center;
+    padding-left: 2em;
+    cursor: pointer;
+}
+
+/* Float the navigation menu to the right */
+header ul {
+    list-style: none;
+    margin-right: 2em;
+    float: right;
+}
+
+header ul li {
+    display: inline-block; /* Allow elements to sit next to each other */
+    margin-right: 20px; /* Adjust spacing between items */
+    color: white;
+    font-size: larger;
+    padding: 1em;
+}
+
+/* Shows pointer cursor */
+.header-cursor{
+    cursor: pointer;
+}
+
+/* Shows default cursor */
+.defaultcursor{
+    cursor: default;
+}
+
+/* Craete a class for the menu in the header */
+.header-object{
+    position: relative;
+}
+
+/* Displays the dropdown list when hovering on the header menu */
+.header-object:hover .dropdown-list{
+    display: block;
+}
+
+/* Craete a dropdown list */
+.dropdown-list{
+    display: none; /* The dropdown list does not display unless hovered on */
+    position: absolute;
+    background-color: black;
+    font-size: medium;
+    padding: 0;
+    top: 100%; /* Position list below parent item */
+    left: 0; /* Align list with parent item */
+    cursor: pointer;
+}
